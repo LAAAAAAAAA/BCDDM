@@ -1,0 +1,9 @@
+# Core requirements
+torch>=2.5.1
+torchvision>=0.20.1
+numpy>=2.0.1
+matplotlib>=3.9.2
+Pillow>=11.0.0
+
+# Additional dependencies
+scipy>=1.13.1  # Often needed for scientific computing
