@@ -1,0 +1,21 @@
+{
+    "model": {
+        "image_size": 256,
+        "channels": 1,
+        "time_steps": 1000,
+        "beta_start": 0.0001,
+        "beta_end": 0.02,
+        "label_dim": 7
+    },
+    "sampling": {
+        "model_path": "saved_models/model_epoch_5000.pth",
+        "output_dir": "sampling_random",
+        "num_samples": 128,
+        "batch_size": 32
+    },
+    "labels": {
+        "random": true,
+        "seed": 42,
+        "range": "-1.7320508075688774,1.7320508075688774"
+    }
+} 

@@ -1,0 +1,10 @@
+create/
+runs/
+saved_models/
+sampling_from-grrt/
+sampling_random/
+ResNet_results/
+
+*.png
+*.npz
+*.log

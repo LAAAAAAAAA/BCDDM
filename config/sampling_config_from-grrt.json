@@ -1,0 +1,21 @@
+{
+    "model": {
+        "image_size": 256,
+        "channels": 1,
+        "time_steps": 1000,
+        "beta_start": 0.0001,
+        "beta_end": 0.02,
+        "label_dim": 7
+    },
+    "sampling": {
+        "model_path": "saved_models/model_epoch_5000.pth",
+        "output_dir": "sampling_from-grrt",
+        "num_samples": 128,
+        "batch_size": 32
+    },
+    "labels": {
+        "input_dir": "RIAF_dataset_2157_files_npz",
+        "random": false,
+        "seed": 42
+    }
+} 

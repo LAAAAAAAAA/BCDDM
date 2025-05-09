@@ -1,0 +1,39 @@
+{
+    "training": {
+        "epochs": 8000,
+        "batch_size": 32,
+        "lr": 0.003,
+        "seed": 42,
+        "save_every": 200,
+        "sample_after": 1000,
+        "lr_scheduler": "plateau",
+        "warmup_epochs": 100
+    },
+    "lr_scheduler_params": {
+        "factor": 0.97,
+        "patience": 5,
+        "min_lr": 1e-6,
+        "cooldown": 2,
+        "lr_freeze_epochs": 500
+    },
+    "model": {
+        "image_size": 256,
+        "channels": 1,
+        "time_steps": 1000,
+        "beta_start": 0.0001,
+        "beta_end": 0.02,
+        "label_dim": 7
+    },
+    "loss": {
+        "noise_prop": 0.95,
+        "label_prop": 0.05
+    },
+    "data": {
+        "data_dir": "RIAF_dataset_2157_files_npz",
+        "val_split": 0.1
+    },
+    "evaluation": {
+        "val_every": 5,
+        "val_samples": 64
+    }
+} 
